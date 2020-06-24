@@ -61,8 +61,8 @@ function change(){
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(1);
-        }
+        //sleep(1);
+        //}
         //sleep(3);
         //$boba11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD2206"}');
         //$messageboba11 = fetch_value($boba11,'"message":"','"');
@@ -76,8 +76,8 @@ function change(){
         //echo "\n".color("yellow","!] Please wait");
         //for($a=1;$a<=3;$a++){
         //echo color("yellow",".");
-        //sleep(1);
-        //}
+        sleep(1);
+        }
         sleep(3);
         $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOJEK"}');
         $message1 = fetch_value($goride,'"message":"','"');
