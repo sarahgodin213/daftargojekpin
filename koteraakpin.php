@@ -20,7 +20,7 @@ function change(){
         otp:
         echo color("nevy","?] Otp: ");
         $otp = trim(fgets(STDIN));
-        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"3c062d6d-90b8-4568-89a8-d4f1acc799b4"}';
+        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"8e7a4f6c-6632-4599-ac44-884a3e0557c5"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
         echo color("green","+] Berhasil mendaftar");
